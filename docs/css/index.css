@@ -1,0 +1,206 @@
+html {
+    font-size: 20px;
+}
+body {
+    background-image: url("../img/thumb-1920-1068595.jpg");
+    background-size: cover;
+}
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header header header header"
+                          "nav nav nav nav nav"
+                          "main main main main main"
+                          "facts facts facts facts answer"
+                          "up aphorism aphorism aphorism answer"
+                          "video video video video answer"
+                          "description description description description answer"
+                          "descriptions descriptions descriptions connection connection";                   
+}
+header {
+    grid-area: header;
+    height: 200px;
+}
+h1 {
+    color:#fbfd67;
+    text-align: center;
+    font-size: 6em;
+    text-shadow: #f5dd8d 0 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30%;
+}
+h3 {
+    color: #f5a142;
+}
+section, section h2,
+.description, .descriptions {
+    color: white;
+    margin: 15px;
+    padding: 15px;
+}
+main {
+    grid-area: main;
+    border-color:#3bbdc2;
+    border-style: inset;
+    border-width:10px;
+    background-color:#eef8b970;
+    padding: 10px;
+    margin: 15px;
+}
+main strong {
+    color: #1d9783;
+}
+main h2 {
+    color:#57e4cc;
+}
+nav {
+    grid-area: nav;
+    font-size: 1.3em;
+}
+nav li {
+    display: inline-flex;
+}
+nav img {
+    height: 40px;
+    width: 40px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+li {
+   list-style-type: none;
+}
+footer {
+    color:#57e4cc;
+    opacity: 0.7;
+}
+.facts {
+    color: white;
+    font-size: 0.9em;
+    margin: 20px;
+    grid-area: facts;
+}
+.connection {
+    grid-area: connection;
+    color: white;
+    font-size: 0.9em;
+    width: 400px;
+    height: 500px;
+    background-color: #ffffff2c;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.connection div {
+    text-align: center;
+    width: auto;
+}
+.connection p {
+    text-align: center;
+    font-size: 1.8em;
+}
+fieldset {
+    color: white;
+    width: 200px;
+    margin: 15px;
+}
+#answer {
+    grid-area: answer;
+}
+textarea {
+    width: 90%;
+    height: 30%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    overflow: auto;
+}
+#video {
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    grid-area: video;
+    align-items: baseline;
+}
+#video video {
+    width: 100%;
+}
+a:link {
+    color:#008000;
+}
+a:visited {
+    color:#f56c6cde;
+}
+a:hover {
+    color:#fafd67da;
+}
+.up {
+    grid-area: up;
+    position: sticky;
+    top: 10px;
+    width: 60px;
+    height: 20px;
+    border-style: solid; 
+    border-width: 5px;
+    border-radius: 3px;
+    border-color:#e487a3;
+    background-color: #e7bfbf;
+    padding: 5px;
+    margin: 15px;
+    opacity: 0.5;
+}
+.description {
+    grid-area: description;
+    font-size: 0.9em;
+}
+.descriptions {
+    grid-area: descriptions;
+    font-size: 0.9em;
+}
+.aphorism {
+    grid-area: aphorism;
+    color:#ffffff;
+    text-align: center;
+    font-size: 2em;
+}
+q {
+    font-family: "Handlee", cursive, serif;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 4em;
+        margin-left: 8%;
+    }
+    #video {
+        font-size: 1.3em;
+    }
+    q {
+        font-size: 0.5em;
+    }
+}
+@media (max-width: 320px) {
+    h1 {
+        font-size: 2em;
+        margin-left: 5%;
+    }
+    #video {
+        font-size: 1em;
+    }
+    q {
+        font-size: 
+    }
+}
+
+
+
+
+
+@media print {
+    body {
+        font-size: 14pt;
+    }
+}

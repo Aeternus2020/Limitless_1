@@ -1,0 +1,32 @@
+
+input[type="radio"],
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid #ffffff;
+    vertical-align: -2px;
+    color: #3fcc3f;
+    cursor: pointer;
+}
+input[type="radio"]::before,
+input[type="checkbox"]::before {
+     content: "✔";
+     position: absolute;
+     font-size: 1.5em;
+     top: -0.3em;
+     visibility: hidden;
+}
+input[type="radio"]:checked::before,
+input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+}
